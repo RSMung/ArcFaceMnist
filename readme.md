@@ -30,3 +30,13 @@
 
 ## 3 测试
 将`trainArcFace.py`或者`trainResnet.py`中的`trainArcFaceMain`或`trainResnetSoftmaxMain` 注释掉, 然后运行`python main.py`即可
+
+
+## 4 实验结果
+### 4.1 arcface
+在第32个epoch时有着最小的验证损失值，此时获得最好的模型。此时的模型在测试集上的精度为99.58%，等错误率EER为0.20%，DET曲线如下图中蓝色曲线所示；
+
+### 4.2 常规方法（softmax）
+此外，为了对比arcface loss与常规训练分类器方法的性能，我以常规方法（直接对模型输出的预测分数logits使用softmax函数转变为各个类别的预测概率，然后使用交叉熵损失函数训练）训练了一个模型，它的精度为99.66%，等错误率EER为0.16%，DET曲线如下图中橙色曲线所示。
+
+<img src="./results/DET.png" width=500><br>
