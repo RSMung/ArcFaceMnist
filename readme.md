@@ -1,3 +1,9 @@
+<div align="center">
+
+## 简体中文 | [English](readme_en.md)
+
+</div>
+
 # 基于Resnet18模型在MNIST数据集上复现ArcFace
 近期我了解到ArcFace Loss在人脸识别算法中有着重大影响，截止2024.9.4引用量达到了7080，因此我想复现这篇经典文章。MNIST数据集是比较简单，容易处理的数据集，因此基于它来完成复现实验。
 
